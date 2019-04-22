@@ -1,0 +1,760 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Set your brand colors
+$blue: #000C4C;
+$purple: #7A306C;
+$teal: #085A6B;
+$peach: #FFCDB2;
+$grey-light: #E5E5E5;
+$white: #ffff;
+
+// Update Bulma's global variables
+$family-sans-serif: "Avenir",
+sans-serif;
+$grey-dark: $blue;
+$grey-light: $grey-light;
+$primary: $blue;
+$link: $purple;
+$info: $teal;
+$widescreen-enabled: true;
+$fullhd-enabled: true;
+
+// Update some of Bulma's component variables
+$body-background-color: $white;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+$button-text-color: $peach;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/bulma.sass";
+
+// animation library
+@import "../node_modules/animate.css/animate.min.css";
+
+
+// Christines Custom Playground
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.15rem;
+}
+
+.subtitle {
+    line-height: 1.5;
+}
+
+
+
+.button.is-primary {
+    color: #FFCDB2;
+    font-weight: 500;
+}
+
+.button.is-link {
+    color: #FFCDB2;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.container {
+    @media screen and (min-width: 1472px) {
+        max-width: 1500px;
+        width: 100%;
+    }
+}
+
+a.navbar-item.logo img {
+    max-height: 4rem;
+}
+
+a.navbar-item.link {
+    padding: 0 3rem;
+    font-size: 20px;
+}
+
+.text-content {
+
+    @include tablet {
+        text-align: right;
+    }
+}
+
+
+.text-design {
+    text-align: center;
+
+    @include tablet {
+        text-align: left;
+    }
+}
+
+
+h2 .level-left.spaced {
+    margin-right: 2rem;
+}
+
+.see-more {
+    margin-top: 2rem;
+    text-align: center;
+
+    @include tablet {
+        margin-top: 10rem;
+    }
+}
+
+.see-more a {
+    color: #000C4C;
+}
+
+.section.project {
+    position: relative;
+}
+
+.section.jasmine {
+    position: relative;
+    padding: 7rem 1.5rem;
+
+    @include tablet {
+        padding: 7rem 1.5rem;
+    }
+
+    @include desktop {
+        padding: 18rem 1.5rem;
+    }
+}
+
+.arrow-right {
+    width: 0px;
+    height: 0px;
+    border-top: 300px solid transparent;
+    border-bottom: 300px solid transparent;
+    border-left: 350px solid #E5E5E5;
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    @include tablet {
+        border-top: 300px solid transparent;
+        border-bottom: 300px solid transparent;
+        border-left: 450px solid #E5E5E5;
+    }
+
+    @include desktop {
+        border-top: 350px solid transparent;
+        border-bottom: 300px solid transparent;
+        border-left: 600px solid #E5E5E5;
+
+    }
+
+    @include widescreen {
+        border-top: 400px solid transparent;
+        border-bottom: 400px solid transparent;
+        border-left: 750px solid #E5E5E5;
+
+    }
+}
+
+.carecloud-text {
+    text-align: center;
+
+    @include tablet {
+        text-align: left;
+    }
+
+}
+
+.arrow-left {
+    width: 0px;
+    height: 0px;
+    border-top: 300px solid transparent;
+    border-bottom: 300px solid transparent;
+    border-right: 350px solid #E5E5E5;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    @include tablet {
+        border-top: 300px solid transparent;
+        border-bottom: 200px solid transparent;
+        border-right: 450px solid #E5E5E5;
+    }
+
+    @include desktop {
+        border-top: 350px solid transparent;
+        border-bottom: 300px solid transparent;
+        border-right: 600px solid #E5E5E5;
+
+    }
+
+    @include widescreen {
+        border-top: 400px solid transparent;
+        border-bottom: 400px solid transparent;
+        border-right: 700px solid #E5E5E5;
+
+    }
+}
+
+
+
+.jasmine-text {
+    text-align: center;
+
+    @include tablet {
+        text-align: right;
+    }
+
+}
+
+
+a.button.is-primary.is-medium.casestudy {
+    margin-top: 1rem;
+    color: #FFCDB2;
+}
+
+a.button.back {
+    margin-right: 1rem;
+}
+
+.section.contact {
+    background-color: #085A6B;
+}
+
+.contact-text {
+    text-align: center;
+}
+
+.contact-text h1,
+.contact-text h2,
+.contact-text a.button {
+    color: #FFCDB2;
+}
+
+.contact-text h2 {
+    padding-top: 1rem;
+    text-align: left;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.copyright {
+    display: flex;
+}
+
+.footer img {
+    padding: 0 1rem;
+}
+
+.footer {
+    background-color: #E5E5E5;
+    padding: 1rem 1.5rem 1rem;
+    font-size: 13px;
+}
+
+
+.section.hero {
+    background-color: #085A6B;
+    text-align: center;
+}
+
+.section.hero h1,
+.section.hero h2,
+.section.hero h4,
+.section.hero p,
+.section.hero a {
+    color: #FFCDB2;
+}
+
+.button.prototype {
+    margin-top: 2rem;
+}
+
+.summary {
+    padding-top: 1rem;
+}
+
+.summary p {
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+
+.role-text h4,
+.tool-text h4,
+.deliverable-text h4 {
+    margin-bottom: 1rem;
+    color: #FFCDB2;
+}
+
+.role-text {
+    background-color: #000C4C;
+    color: #FFCDB2;
+    font-size: 16px;
+}
+
+.tool-text {
+    background-color: #085A6B;
+    color: #ffe1d1;
+    font-size: 16px;
+}
+
+.deliverable-text {
+    background-color: #7A306C;
+    color: #ffe1d1;
+    font-size: 16px;
+}
+
+.section.research {
+    background-color: #E5E5E5;
+}
+
+.usersurvey-text p {
+    @include desktop {
+        width: 61%;
+    }
+}
+
+.stats {
+    margin-top: 2rem;
+    color: #FFCDB2;
+
+    @include desktop {
+        margin-left: 4rem;
+    }
+}
+
+.competitivetext {
+    @include desktop {
+        margin-right: 1rem;
+    }
+}
+
+.inner-box {
+
+    @include tablet {
+        display: flex;
+    }
+}
+
+.competitor-images img {
+    width: 80%;
+}
+
+.checkmark {
+    margin: 1rem 0;
+}
+
+.list-text {
+    vertical-align: super;
+    margin: 10px;
+}
+
+
+
+.competitorimg {
+    padding: 1rem 0;
+    width: 50%;
+
+    @include tablet {
+        width: 100%;
+        height: 60px;
+    }
+}
+
+.checkmark img {
+    width: 20px;
+}
+
+
+.section.persona {
+    background-color: #E5E5E5;
+}
+
+.persona-text {
+    @include desktop {
+        width: 68%;
+    }
+}
+
+
+.caption {
+    text-align: left;
+}
+
+.persona_links,
+.persona_links2 {
+    text-align: center;
+}
+
+
+figure img {
+    margin-bottom: 1rem;
+}
+
+.content {
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+
+.table {
+    font-size: 13px;
+
+
+    @include desktop {
+        font-size: 15px;
+    }
+}
+
+.table thead {
+    background-color: #000C4C;
+}
+
+.table thead th {
+    color: #FFCDB2;
+}
+
+.card-image.flow {
+    padding: 1rem;
+}
+
+.flow-text p {
+    margin-bottom: 1rem;
+}
+
+.wire-left {
+    text-align: center;
+}
+
+.wire-left p {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.wire-left h4 {
+    text-align: left;
+}
+
+.wire-left figure {
+    margin-bottom: 2rem;
+}
+
+.wire-right {
+    @include tablet {
+        text-align: center;
+        margin-left: 2rem;
+    }
+}
+
+.wire-right p {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.section.wireframe {
+    background-color: #E5E5E5;
+}
+
+.styletext p {
+    @include tablet {
+        width: 90%;
+    }
+}
+
+.color-palette {
+    margin-top: 1rem;
+
+
+    @include tablet {
+        display: flex;
+    }
+
+}
+
+.card-content.color_1,
+.card-content.color_2,
+.card-content.color_3,
+.card-content.color_4 {
+
+    padding: 3rem 0;
+}
+
+.card-footer-item {
+    font-size: 14px;
+    padding: 0.2rem;
+}
+
+.color_1 {
+    background-color: #1C3097;
+}
+
+.color_2 {
+    background-color: #4A67CF;
+}
+
+.color_3 {
+    background-color: #C9C5C5;
+}
+
+.color_4 {
+    background-color: #EFEFEF;
+}
+
+.card.color {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logotext {
+    margin-bottom: 1rem;
+}
+
+.logo img {
+    margin-bottom: 1rem;
+}
+
+.style-bottom {
+    margin-top: 3rem;
+}
+
+.hi-fi {
+    background-color: #E5E5E5;
+}
+
+.mockups-left {
+    text-align: center;
+}
+
+.mockups-left h4,
+.mockups-left p {
+    text-align: left;
+}
+
+.mockups-right {
+    text-align: center;
+}
+
+.testing-right {
+    text-align: center;
+}
+
+.testing-right img {
+    margin: 2rem 0;
+}
+
+.usability-img img {
+    margin-top: 2rem;
+}
+
+
+.section.hi-fi2 {
+    background-color: #E5E5E5;
+}
+
+.mockups-right2 {
+    text-align: center;
+}
+
+.mockups-left2 {
+    text-align: center;
+}
+
+.mockups-left2 h4,
+.mockups-left2 p {
+    text-align: left;
+}
+
+.section.conclusion {
+    background-color: #085A6B;
+    color: #ffe1d1;
+    text-align: center;
+    padding: 2rem;
+
+    @include tablet {
+        padding: 5rem;
+    }
+
+}
+
+.section.conclusion p {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+    @include desktop {
+        width: 70%;
+    }
+
+}
+
+.section.conclusion h4 {
+    color: #ffe1d1;
+}
+
+.section.about {
+    position: relative;
+    background-color: #E5E5E5;
+
+}
+
+
+.about-me1 {
+    background-color: #E5E5E5;
+    margin-bottom: 2rem;
+
+    @include tablet {
+        width: 60%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+        bottom: -4rem;
+    }
+
+    @include desktop {
+        width: 50%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+        bottom: -4rem;
+    }
+}
+
+
+.column.parallelogram_img {
+    position: relative;
+    overflow: hidden;
+}
+
+.column.parallelogram {
+    position: relative;
+    overflow: hidden;
+    padding: 0rem;
+}
+
+.column.parallelogram_img::before {
+
+    @include tablet {
+        content: '';
+        display: block;
+        width: 100%;
+        background-color: #E5E5E5;
+        height: 200px;
+        position: absolute;
+        transform: skew(0deg, 12deg);
+        top: -8%;
+        z-index: 1;
+    }
+}
+
+.column.parallelogram_img::after {
+    @include tablet {
+        content: '';
+        display: block;
+        width: 100%;
+        background-color: #E5E5E5;
+        height: 217px;
+        position: absolute;
+        transform: skew(0deg, 12deg);
+        bottom: -11%;
+        z-index: 1;
+    }
+
+}
+
+
+.parallelogram {
+    @include tablet {
+        height: 1000px;
+        width: 1000px;
+        background-color: #000C4C;
+    }
+}
+
+
+
+.column.parallelogram::before {
+    @include tablet {
+        content: '';
+        display: block;
+        width: 100%;
+        background-color: #E5E5E5;
+        height: 220px;
+        position: absolute;
+        transform: skew(0deg, -12deg);
+        top: -10%;
+    }
+}
+
+.column.parallelogram::after {
+    @include tablet {
+        content: '';
+        display: block;
+        width: 100%;
+        background-color: #E5E5E5;
+        height: 217px;
+        position: absolute;
+        transform: skew(0deg, -12deg);
+        bottom: -11%;
+    }
+
+}
+
+.column.one-half.parallelogram {
+    display: flex;
+}
+
+.me_img img {
+    @include tablet {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.about-me2 {
+    background-color: #000C4C;
+    color: #FFCDB2;
+    padding: 2rem 1rem;
+    align-self: center;
+
+    @include tablet {
+        padding: 1rem;
+    }
+
+    @include desktop {
+        padding: 4rem;
+    }
+}
+
+.about-me3 {
+    background-color: #E5E5E5;
+    margin-top: 2rem;
+
+    @include tablet {
+        position: relative;
+
+        width: 60%;
+        margin: 0 auto;
+        top: -2rem;
+        z-index: 2;
+    }
+
+    @include desktop {
+        width: 50%;
+        margin: 0 auto;
+        top: 0rem;
+    }
+
+}

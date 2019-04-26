@@ -6937,6 +6937,24 @@ body {
 .subtitle {
   line-height: 1.5; }
 
+.active {
+  background-color: #fafafa;
+  color: #7A306C; }
+
+h1.home {
+  font-size: 3rem;
+  font-weight: 300; }
+
+h2.home {
+  font-weight: 500; }
+
+.section-title {
+  font-variant: all-small-caps;
+  font-weight: 500;
+  letter-spacing: 4px;
+  font-size: 2.5rem;
+  margin-bottom: 2rem; }
+
 .button.is-primary {
   color: #FFCDB2;
   font-weight: 500; }
@@ -6999,26 +7017,27 @@ h2 .level-left.spaced {
   height: 0px;
   border-top: 300px solid transparent;
   border-bottom: 300px solid transparent;
-  border-left: 350px solid #E5E5E5;
+  border-left: 350px solid #E8E9F3;
   position: absolute;
   z-index: 0;
   top: 50%;
-  transform: translate(0, -50%); }
+  transform: translate(0, -50%);
+  margin-left: -1.5rem; }
   @media screen and (min-width: 769px), print {
     .arrow-right {
       border-top: 300px solid transparent;
       border-bottom: 300px solid transparent;
-      border-left: 450px solid #E5E5E5; } }
+      border-left: 450px solid #E8E9F3; } }
   @media screen and (min-width: 1088px) {
     .arrow-right {
       border-top: 350px solid transparent;
       border-bottom: 300px solid transparent;
-      border-left: 600px solid #E5E5E5; } }
+      border-left: 600px solid #E8E9F3; } }
   @media screen and (min-width: 1280px) {
     .arrow-right {
       border-top: 400px solid transparent;
       border-bottom: 400px solid transparent;
-      border-left: 750px solid #E5E5E5; } }
+      border-left: 750px solid #E8E9F3; } }
 
 .carecloud-text {
   text-align: center; }
@@ -7031,7 +7050,7 @@ h2 .level-left.spaced {
   height: 0px;
   border-top: 300px solid transparent;
   border-bottom: 300px solid transparent;
-  border-right: 350px solid #E5E5E5;
+  border-right: 350px solid #EAE1E8;
   position: absolute;
   z-index: 0;
   right: 0;
@@ -7041,17 +7060,17 @@ h2 .level-left.spaced {
     .arrow-left {
       border-top: 300px solid transparent;
       border-bottom: 200px solid transparent;
-      border-right: 450px solid #E5E5E5; } }
+      border-right: 450px solid #EAE1E8; } }
   @media screen and (min-width: 1088px) {
     .arrow-left {
       border-top: 350px solid transparent;
       border-bottom: 300px solid transparent;
-      border-right: 600px solid #E5E5E5; } }
+      border-right: 550px solid #EAE1E8; } }
   @media screen and (min-width: 1280px) {
     .arrow-left {
       border-top: 400px solid transparent;
       border-bottom: 400px solid transparent;
-      border-right: 700px solid #E5E5E5; } }
+      border-right: 750px solid #EAE1E8; } }
 
 .jasmine-text {
   text-align: center; }
@@ -7137,6 +7156,12 @@ a.button.back {
   color: #ffe1d1;
   font-size: 16px; }
 
+.duration {
+  background-color: #E5E5E5; }
+
+.duration p {
+  font-size: 1.5rem; }
+
 .section.research {
   background-color: #E5E5E5; }
 
@@ -7160,7 +7185,7 @@ a.button.back {
     display: flex; } }
 
 .competitor-images img {
-  width: 80%; }
+  width: 70%; }
 
 .checkmark {
   margin: 1rem 0; }
@@ -7178,6 +7203,9 @@ a.button.back {
       height: 60px; } }
 
 .checkmark img {
+  width: 20px; }
+
+.x img {
   width: 20px; }
 
 .section.persona {
@@ -7200,6 +7228,17 @@ figure img {
 .content {
   margin-top: 1rem;
   font-size: 16px; }
+
+.tile.is-child.notification.is-info.quotes {
+  background-color: #05343E; }
+
+.tile.is-child.notification.is-link.quotes {
+  background-color: #471F3F; }
+
+.subtitle.quotes {
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.25; }
 
 .table {
   font-size: 13px; }
@@ -7241,6 +7280,9 @@ figure img {
   text-align: left;
   margin-bottom: 2rem; }
 
+.usability-wireframe {
+  margin-top: 1rem; }
+
 .section.wireframe {
   background-color: #E5E5E5; }
 
@@ -7280,14 +7322,55 @@ figure img {
   margin-right: 1rem;
   margin-bottom: 1rem; }
 
+.style-bottom {
+  display: flex;
+  margin: 1rem 0; }
+
 .logotext {
   margin-bottom: 1rem; }
 
 .logo img {
   margin-bottom: 1rem; }
 
-.style-bottom {
-  margin-top: 3rem; }
+p.Lora {
+  font-size: 1.8rem;
+  font-family: Lora; }
+
+.typography {
+  margin-top: 0.5rem; }
+
+.iconography {
+  margin-top: 1rem; }
+
+p.Lora-text {
+  font-family: Lora; }
+
+p.Lato {
+  font-family: Lato;
+  font-size: 1.8rem; }
+
+p.Lato-text {
+  font-family: Lato; }
+
+p.Lora-H1 {
+  font-size: 36px;
+  font-family: Lora; }
+
+p.Lora-H2 {
+  font-size: 24px;
+  font-family: Lora; }
+
+p.Lato-H3 {
+  font-size: 24px;
+  font-family: Lato; }
+
+p.Lato-H4 {
+  font-size: 20px;
+  font-family: Lato; }
+
+p.Lato-body {
+  font-size: 16px;
+  font-family: Lato; }
 
 .hi-fi {
   background-color: #E5E5E5; }
@@ -7302,14 +7385,18 @@ figure img {
 .mockups-right {
   text-align: center; }
 
-.testing-right {
+@media screen and (min-width: 1088px) {
+  .testing-left {
+    width: 65%; } }
+
+.logo-testing {
   text-align: center; }
 
-.testing-right img {
-  margin: 2rem 0; }
+.logo-testing img {
+  margin-bottom: 2rem; }
 
-.usability-img img {
-  margin-top: 2rem; }
+.usability-img {
+  margin: 0 auto; }
 
 .section.hi-fi2 {
   background-color: #E5E5E5; }
@@ -7341,7 +7428,7 @@ figure img {
     .section.conclusion p {
       width: 70%; } }
 
-.section.conclusion h4 {
+.section.conclusion h1 {
   color: #ffe1d1; }
 
 .section.about {
@@ -7350,25 +7437,28 @@ figure img {
 
 .about-me1 {
   background-color: #E5E5E5;
-  margin-bottom: 2rem; }
+  margin-bottom: 3rem; }
   @media screen and (min-width: 769px), print {
     .about-me1 {
       width: 60%;
       margin: 0 auto;
       position: relative;
       z-index: 2;
-      bottom: -4rem; } }
+      bottom: -2rem; } }
   @media screen and (min-width: 1088px) {
     .about-me1 {
       width: 50%;
       margin: 0 auto;
       position: relative;
       z-index: 2;
-      bottom: -4rem; } }
+      bottom: -3rem; } }
 
 .column.parallelogram_img {
   position: relative;
   overflow: hidden; }
+  @media screen and (min-width: 769px), print {
+    .column.parallelogram_img {
+      margin-left: -1.5rem; } }
 
 .column.parallelogram {
   position: relative;
@@ -7429,6 +7519,9 @@ figure img {
 
 .column.one-half.parallelogram {
   display: flex; }
+  @media screen and (min-width: 769px), print {
+    .column.one-half.parallelogram {
+      margin-right: -0.75rem; } }
 
 @media screen and (min-width: 769px), print {
   .me_img img {
@@ -7451,16 +7544,18 @@ figure img {
 
 .about-me3 {
   background-color: #E5E5E5;
-  margin-top: 2rem; }
+  margin-top: 3rem; }
   @media screen and (min-width: 769px), print {
     .about-me3 {
       position: relative;
-      width: 60%;
+      width: 65%;
       margin: 0 auto;
-      top: -2rem;
-      z-index: 2; } }
+      top: 0rem;
+      z-index: 2;
+      padding-bottom: 2rem; } }
   @media screen and (min-width: 1088px) {
     .about-me3 {
       width: 50%;
       margin: 0 auto;
-      top: 0rem; } }
+      top: 0rem;
+      padding: 2rem 0; } }

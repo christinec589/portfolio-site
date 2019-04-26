@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Christine Chiang | UX Designer</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -47,7 +47,7 @@
     <section class="section hero">
         <div class="container is-fluid">
             <div class="title">
-                <h1 class="title is-spaced">CareCloud</h1>
+                <H1 class="title is-spaced">CareCloud</H1>
                 <h2 class="subtitle">Healthcare Cloud and Organizational Tool</h2>
             </div>
             <div class="hero-image">
@@ -68,8 +68,8 @@
     </section>
     <!-- Problem/solution Section -->
     <section class="section">
-        <H1 class="title is-spaced is-primary">| Overview |</H1>
         <div class="container">
+            <p class="section-title">Overview</p>
             <div class="tile is-ancestor">
                 <div class="tile is-6 is-vertical is-parent">
                     <div class="tile is-child box problem">
@@ -101,6 +101,9 @@
 
 
                 <div class="tile is-3 is-vertical is-parent">
+                    <div class="tile is-child box duration">
+                        <p><b>Project Duration:</b><br> Eight Weeks</p>
+                    </div>
                     <div class="tile is-child box role-text">
 
                         <ul class="role-text">
@@ -183,8 +186,8 @@
 
     <!-- User Research Section -->
     <section class="section research">
-        <H1 class="title is-spaced">| User Research |</H1>
         <div class="container">
+            <p class="section-title">User Research</p>
             <div class="usersurvey-stats">
                 <div class="usersurvey">
                     <div class="usersurvey-text">
@@ -266,6 +269,11 @@
                                         class="list-text">Simple</span>
                                 </div>
                             </li>
+                            <li>
+                                <div class="x">
+                                    <img src="img/x.svg" alt="x icon"><span class="list-text">Security Weaknesses</span>
+                                </div>
+                            </li>
                         </ul>
                         <ul class="column one-drive">
                             <li>
@@ -285,6 +293,12 @@
                                         class="list-text">Accessible</span>
                                 </div>
                             </li>
+                            <li>
+                                <div class="x">
+                                    <img src="img/x.svg" alt="checkmark icon"><span class="list-text">Not Compatible
+                                        with all Formats</span>
+                                </div>
+                            </li>
                         </ul>
                         <ul class="column dropbox">
                             <li>
@@ -302,6 +316,11 @@
                                 <div class="checkmark">
                                     <img src="img/checkmark.svg" alt="checkmark icon"><span class="list-text">Easy to
                                         Collaborate</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="x">
+                                    <img src="img/x.svg" alt="x icon"><span class="list-text">Small Storage Space</span>
                                 </div>
                             </li>
                         </ul>
@@ -340,14 +359,15 @@
                             <img src="img/persona_1.jpg">
                         </figure>
                         <div class="content">
-                            <p>Age: 51<br>
-                                Occupation: Cardiologist<br>
-                                Location: Nashville, TN<br>
-                                Gender: Male</P>
+                            <p><b>Age:</b> 51<br>
+                                <b>Occupation:</b> Cardiologist<br>
+                                <b>Location:</b> Nashville, TN<br>
+                                <b>Gender:</b> Male</P>
                         </div>
                     </article>
-                    <article class="tile is-child notification is-info">
-                        <p class="subtitle">"New technology should make your job easier and improve the healthcare
+                    <article class="tile is-child notification is-info quotes">
+                        <p class="subtitle quotes">"New technology should make your job easier and improve the
+                            healthcare
                             process"</p>
                     </article>
                     <article class="tile is-child">
@@ -381,14 +401,15 @@
                             <img src="img/persona_2.jpg">
                         </figure>
                         <div class="content">
-                            <p>Age: 29<br>
-                                Occupation: Pediatric Intern<br>
-                                Location: Pittsburgh, PA<br>
-                                Gender: Female</P>
+                            <p><b>Age:</b> 29<br>
+                                <b>Occupation:</b> Pediatric Intern<br>
+                                <b>Location:</b> Pittsburgh, PA<br>
+                                <b>Gender:</b> Female</P>
                         </div>
                     </article>
-                    <article class="tile is-child notification is-link">
-                        <p class="subtitle ">"My time should be spent treating patients. I chose medicine to work with
+                    <article class="tile is-child notification is-link quotes">
+                        <p class="subtitle quotes ">"My time should be spent treating patients. I chose medicine to work
+                            with
                             people and not to do data entry"</p>
                     </article>
                     <article class="tile is-child">
@@ -424,10 +445,11 @@
 
     <!-- Info Architecture Section -->
     <section class="section user stories flow">
-        <H1 class="title">| Information Architecture |</H1>
+
         <div class="container">
+            <p class="section-title">Information Architecture</p>
             <div class="columns">
-                <div class="column stories-text">
+                <div class="column is-half stories-text">
                     <h4 class="title is-4 is-spaced">User Stories</h4>
                     <p>From the user research completed, there was enough data and feedback collected to create a MVP.
                         These
@@ -447,84 +469,76 @@
                     </div>
                 </div>
 
-                <div class="column is-one-half">
-                    <table class="table is-narrow is-hoverable box">
+                <div class="column is-two-fifths">
+                    <table class="table is-narrow is-striped is-hoverable box">
                         <thead>
                             <tr>
-                                <th>User</th>
                                 <th>Task</th>
                                 <th>Importance</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>New/returning user</td>
                                 <td>Save and edit patient charts and information</td>
                                 <td>High</td>
                             </tr>
                             <tr>
-                                <td>New/returning user</td>
                                 <td>Collaborate with doctors and medical staff in real-time
                                 </td>
                                 <td>High</td>
                             </tr>
                             <tr>
-                                <td>New/returning user</td>
                                 <td>Share files with other medical staff</td>
                                 <td>High</td>
                             </tr>
                             <tr>
-                                <td>New/returning user</td>
                                 <td>Uploading files and media (videos, images, PDFs, etc)</td>
                                 <td>High</td>
                             </tr>
                             <tr>
-                                <td>New/returning user</td>
                                 <td>Ability to organize and categorize patient files</td>
                                 <td>High</td>
                             </tr>
                             <tr>
-                                <td>New/returning user</td>
                                 <td>Share files with other hospitals and healthcare institutions</td>
                                 <td>High</td>
                             </tr>
                             <tr>
-                                <td>New/returning user</td>
                                 <td>Creating documents (word docs, spreadsheets, etc)</td>
                                 <td>Medium</td>
                             </tr>
                             <tr>
-                                <td>New/returning user</td>
+
                                 <td>Uploading medical notes and journals</td>
                                 <td>Medium</td>
                             </tr>
                             <tr>
-                                <td>New/returning user</td>
+
                                 <td>Store medical imaging</td>
                                 <td>Medium</td>
                             </tr>
                             <tr>
-                                <td>New/returning user</td>
+
                                 <td>Save content from the web</td>
                                 <td>Medium</td>
                             </tr>
                             <tr>
-                                <td>New/returning user</td>
+
                                 <td>Search capability by tags, groups, labels, etc</td>
                                 <td>Low</td>
                             </tr>
                             <tr>
-                                <td>New/returning user</td>
+
                                 <td>Build reports from patient data</td>
                                 <td>Low</td>
                             </tr>
                             <tr>
-                                <td>New/returning user</td>
+
                                 <td>Create and build presentations</td>
                                 <td>Low</td>
                             </tr>
                             <tr>
-                                <td>New/returning user</td>
+
                                 <td>Offline Access</td>
                                 <td>Low</td>
                             </tr>
@@ -564,7 +578,7 @@
     <section class="section wireframe">
         <div class="container">
             <div class="columns">
-                <div class="column is-one-third wire-left">
+                <div class="column is-3 wire-left">
                     <h4 class="title is-4 is-spaced">Wireframes</h4>
                     <p>First iterations of wireframes were rough sketches of different elements of the tool.</p>
                     <figure class="image is-4by5">
@@ -582,16 +596,19 @@
                         prototype, and then
                         testing the prototype, it helped me realize which process wasn’t fully developed and where we
                         needed
-                        to redesign. I
-                        conducted <strong>usability testing</strong> on the completed wireframes and redesigns from
-                        testing results
-                        included
-                        adding more
-                        confirmation messages and additional ways to return back to the Dashboard.</p>
+                        to redesign. </p>
                     <img src="img/Folder.svg" alt="Folder wireframe">
                     <img src="img/Share Internal - Filled (1).svg" alt="Share Wireframe">
                     <img src="img/Edit Patient Chart (1).svg" alt="Edit Chart Wireframe">
-                    <img src="img/Dashboard (4).svg" alt="Dashboard Wireframe">
+                    <div class="usability-wireframe">
+                        <p>I
+                            conducted <strong>usability testing</strong> on the completed wireframes and redesigns from
+                            testing results
+                            included
+                            adding more
+                            confirmation messages and additional ways to return back to the Dashboard.</p>
+                        <img src="img/wireframeusability.svg" alt="Wireframe Usability">
+                    </div>
                 </div>
             </div>
         </div>
@@ -600,8 +617,8 @@
     <!-- Branding Section -->
 
     <section class="section style-guide">
-        <H1 class="title">| Branding |</H1>
         <div class="container">
+            <p class="section-title">Branding</p>
             <div class="columns is-vcentered style-left-right">
                 <div class="column is-8-desktop">
                     <div class="styletext">
@@ -615,7 +632,12 @@
                             grey,
                             which adds a level of calmness, while remaining professional looking. The logo was a result
                             of
-                            combining the name of the product, CareCloud with an EKG design.</p> <br>
+                            combining the name of the product, CareCloud with an EKG design. Icons used are simple.
+                            clean, and demostrate the healthcare symbols accurately. They are not to be stretched or
+                            distorted from their original size and shape.
+                            The color of the icons may be changed to any of the colors of the color palette as long as
+                            contrast is taken in
+                            consideration.</p> <br>
                     </div>
                     <strong>Color Palette</strong>
                     <div class="columns color-palette">
@@ -677,19 +699,50 @@
                 </div>
             </div>
 
-            <div class="style-bottom">
+            <div class="type-icon">
+                <div class="typography-text">
+                    <strong>Typography</strong>
+                </div>
+                <div class="style-bottom">
+                    <div class="typography is-vcentered columns box">
+                        <div class="column is-5">
+                            <p class="Lora">Lora</p>
+                            <p class="Lora-text">Used primarily for homepage headlines and headings</p><br>
+                            <p class="Lato">Lato</p>
+                            <p class="Lato-text">Used primarily for client side headlines and body text</p>
+                        </div>
+                        <div class="column is-5">
+                            <p class="Lora-H1">H1 Heading - 36px</p>
+                            <p class="Lora-H2">H2 Heading - 24px</p> <br>
+                            <p class="Lato-H3">H3 Heading - 24px</p>
+                            <p class="Lato-H4">H4 Heading - 20px</p>
+                            <p class="Lato-body">Body Copy - 16px</p>
+                        </div>
+
+                    </div>
+                    <div class="column is-1"></div>
+                    <div class="column is-4">
+                        <strong>Iconography</strong>
+                        <div class="iconography box">
+                            <img src="img/icons.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=style-guide button>
                 <a class="button is-primary is-medium wireframe"
                     href="https://www.figma.com/file/CoGRtEDEnI5Srb1hFqKslZBL/CareCloud-Style-Guide?node-id=0%3A1"
                     target="_blank">See
                     Full Style Guide</a>
             </div>
         </div>
+        </div>
     </section>
 
     <!-- Visual Design + Testing Section -->
     <section class="section hi-fi">
-        <H1 class="title">| Visual Design & Testing |</H1>
         <div class="container">
+            <p class="section-title">Visual Design & Testing</p>
             <div class="columns">
                 <div class="column one-half mockups-left">
                     <h4 class="title is-4 is-spaced">Initial Hi-Fi Mockups</h4>
@@ -708,41 +761,44 @@
     </section>
     <section class="section testing">
         <div class="container">
-            <div class="columns">
-                <div class="column is-one-half testing-left">
-                    <h4 class="title is-4 is-spaced">Preference Testing</h4>
-                    <div class="testing-left">
-                        <p>I created preference tests to refine the logo and the dashboard with Usability Hub.</p> <br>
-                        <p>The testing resulted in selecting the logo with the CareCloud name split to be above and
-                            below
-                            the
-                            heart beat symbol.
-                            The dashboard with the periwinkle blue was overwhelmingly the preferred dashboard and
-                            feedback
-                            from
-                            mentors resulted in
-                            the current dashboard in the final prototype.</p><br><br>
-                    </div>
-                    <div class="usability-text">
-                        <h4 class="title is-4 is-spaced">Usability Testing</h4>
-                        <p>In-person usability tests were also conducted on prototypes to ensure that the flow of the
-                            screens
-                            were intuitive and
-                            inline with the brand of being easy to use. A few changes were made after the results of the
-                            usability tests including
-                            moving the confirmation message to be more prominent on the screen and redesigning the task
-                            of
-                            moving a file to a
-                            folder.
-                        </p>
-                    </div>
-                    <div class="usability-img">
-                        <img src="img/usabilitytesting.svg" alt="Mockups re-iterated">
-                    </div>
+            <h4 class="title is-4 is-spaced">Preference Testing</h4>
+            <div class="testing-left">
+                <p>I created preference tests to refine the logo and the dashboard with Usability Hub.</p> <br>
+                <p>The testing resulted in selecting the logo with the CareCloud name split to be above and
+                    below
+                    the
+                    heart beat symbol.
+                    The dashboard with the periwinkle blue was overwhelmingly the preferred dashboard and
+                    feedback
+                    from
+                    mentors resulted in
+                    the current dashboard in the final prototype.</p><br><br>
+            </div>
+
+
+
+            <div class="logo-testing">
+                <img src="img/dashboardtest.svg" alt="Dashboard Testing">
+                <img src="img/logotest.svg" alt="Logo Testing">
+            </div>
+            <div class="columns is-desktop">
+                <div class="column is-4-desktop usability-text">
+                    <h4 class="title is-4 is-spaced">Usability Testing</h4>
+                    <p>In-person usability tests were also conducted on prototypes to ensure that the flow of the
+                        screens
+                        were intuitive and
+                        inline with the brand of being easy to use. A few changes were made after the results of the
+                        usability tests including
+                        moving the confirmation message to be more prominent on the screen and redesigning the task
+                        of
+                        moving a file to a
+                        folder.
+                    </p>
                 </div>
-                <div class="column testing-right">
-                    <img src="img/dashboardtest.svg" alt="Dashboard Testing">
-                    <img src="img/logotest.svg" alt="Logo Testing">
+                <div class="column is-1-desktop">
+                </div>
+                <div class="column usability-img">
+                    <img src="img/usabilitytesting.svg" alt="Mockups re-iterated">
                 </div>
             </div>
         </div>
@@ -771,7 +827,7 @@
     <!-- Conclusion Section -->
     <section class="section conclusion">
         <div class="container">
-            <h4 class="title is-4 is-spaced">Conclusion</h4>
+            <H1 class="title is-spaced">Lessons Learned</H1>
             <p>This project gave me opportunities to assess areas of improvement. More of the survey questions could
                 have been specific
                 to the current medical record systems used by the participants and exact areas in the interface that

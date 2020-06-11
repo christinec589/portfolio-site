@@ -6938,7 +6938,7 @@ body {
 
 @media screen and (min-width: 1472px) {
   .container {
-    max-width: 1100px;
+    max-width: px;
     width: 100%; } }
 
 .subtitle {
@@ -7681,7 +7681,9 @@ figure img {
 
 .section.about {
   position: relative;
-  background-color: #E5E5E5; }
+  background-color: #E5E5E5;
+  max-width: 2075px;
+  margin: 0 auto; }
 
 .about-me1 {
   background-color: #E5E5E5;

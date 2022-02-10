@@ -13,6 +13,6 @@
   "dependencies": {
     "animate.css": "^3.7.0",
     "bulma": "^0.7.4",
-    "node-sass": "^4.11.0"
+    "node-sass": "^7.0.0"
   }
 }
